@@ -1,0 +1,162 @@
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.forgot-dropdown {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  border-radius: 22px;
+  z-index: 9999;
+  border: 1px solid rgb(192, 191, 191);
+  padding-left: 30px;
+}
+
+.forgot-dropdown h2 {
+  font-size: 25px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(18, 18, 18);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+    .input-group-forgot {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group-forgot input {
+      width: 91%;
+      padding: 10px 5px;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      outline: none;
+      background: transparent;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    .input-group-forgot input:focus {
+         border-bottom: 1px solid rgba(0, 0, 0, 0.6); 
+    }
+
+    .input-group-forgot label {
+      position: absolute;
+      top: 11px;
+      left: 1px;
+      color: #767676;
+      font-size: 15px;
+      font-family: "Playfair Display", serif;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-group-forgot input:focus + label,
+    .input-group-forgot input:not(:placeholder-shown) + label {
+      top: -7px;
+      left: 3px;
+      font-size: 12px;
+      color: #272727;
+    }
+
+    .input-group-forgot label span {
+      color: red;
+    }
+
+    .forgot-dropdown button {
+  width: 95%;
+  height: 45px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: -3px;
+}
+
+.forgot-dropdown button:hover {
+  background-color: black;
+  transition: 0.2s ease;
+}
+
+.success {
+  color: green;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablets and smaller laptops */
+@media (max-width: 768px) {
+  .forgot-dropdown {
+    width: 90%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .forgot-dropdown h2 {
+    font-size: 22px;
+  }
+  
+  .input-group-forgot input {
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  .forgot-dropdown button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .forgot-dropdown {
+    width: 95%;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+  }
+  
+  .forgot-dropdown h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group-forgot input {
+    width: 100%;
+    padding: 8px 5px;
+    font-size: 14px;
+  }
+  
+  .input-group-forgot label {
+    font-size: 13px;
+  }
+  
+  .forgot-dropdown button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
